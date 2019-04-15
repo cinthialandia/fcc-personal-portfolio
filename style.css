@@ -1,217 +1,243 @@
 /*general styles*/
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
 }
 
 /*nav style flexbox*/
 .link-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    margin: 0px;
-    font-size: 20px;
-    background: #EAC5DA;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin: 0px;
+  font-size: 20px;
+  background: #eac5da;
 }
 
 /*remove defoult nav style*/
 .link-nav li {
-    flex-basis: 11%;
-    list-style: none;
-    margin: 0px;
+  flex-basis: 11%;
+  list-style: none;
+  margin: 0px;
 }
 
 .link-nav a {
-    text-decoration: none;
-    color: #2E1742;
-    ;
+  text-decoration: none;
+  color: #2e1742;
 }
 
 a:hover {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 /*funtion sticky for putting the nav on the top always view*/
 #navbar {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 /*about section style*/
 /*style title*/
 .section-about h1 {
-    font-size: 50px;
-    text-align: center;
-    margin: 0px;
-    color: #2E1742;
+  font-size: 50px;
+  text-align: center;
+  margin: 0px;
+  color: #2e1742;
 }
 
 /*style title*/
 .section-about h3 {
-    font-size: 20px;
-    text-align: center;
-    color: #2E1742;
+  font-size: 20px;
+  text-align: center;
+  color: #2e1742;
 }
 
 /*img style*/
 .about img {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*the 100 heifht say all the screen will be ocuped*/
 .section-about {
-    background: #EAC5DA;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #eac5da;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*title section 2 works*/
-#work {
-    font-size: 30px;
-    text-align: center;
-    color: #2E1742;
+.title-work {
+  font-size: 30px;
+  text-align: center;
+  color: #2e1742;
+  padding: 20px;
 }
 
 /*section 2 work links*/
-/*remove defoult style*/
-.section-work a {
-    text-decoration: none;
-    color: #EAC5DA;
-}
 
 /*flexbox projects*/
+
+.work-screen {
+  max-width: 1200px;
+  margin: auto;
+}
 .section-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /*style elemnts*/
 .project-pic {
-    width: 400px;
-    height: 200px;
-    margin: 60px;
-    padding: 10px;
+  width: 100%;
 }
 
 .project-title {
-    text-align: center;
-    border: solid #2E1742 1px;
-    padding: 10px;
-    background: #2E1742;
+  text-align: center;
+  border: solid #2e1742 1px;
+  padding: 10px;
+  background: #2e1742;
 }
-
+/*remove defoult style*/
 .section-work a {
-    border: solid #2E1742 1px;
-    margin: 10px;
+  border: solid #2e1742 1px;
+  width: 40%;
+  text-decoration: none;
+  color: #eac5da;
+  margin-top: 20px;
 }
-
+.nav-spaced {
+  padding-top: 64px;
+  margin-top: -64px;
+}
 /*button style*/
 .container-button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 14px 38px;
-    border: 0px solid #473557;
-    border-radius: 0px;
-    background: #271933;
-    background: -webkit-gradient(linear, left top, left bottom, from(#271933), to(#473557));
-    background: -moz-linear-gradient(top, #271933, #473557);
-    background: linear-gradient(to bottom, #271933, #473557);
-    font: 19px 'Montserrat', sans-serif;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 40px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 14px 38px;
+  border: 0px solid #473557;
+  border-radius: 0px;
+  background: #271933;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#271933),
+    to(#473557)
+  );
+  background: -moz-linear-gradient(top, #271933, #473557);
+  background: linear-gradient(to bottom, #271933, #473557);
+  font: 19px "Montserrat", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 40px;
 }
 
 .button:active {
-    background: #170f1f;
-    background: -webkit-gradient(linear, left top, left bottom, from(#170f1f), to(#473557));
-    background: -moz-linear-gradient(top, #170f1f, #473557);
-    background: linear-gradient(to bottom, #170f1f, #473557);
+  background: #170f1f;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#170f1f),
+    to(#473557)
+  );
+  background: -moz-linear-gradient(top, #170f1f, #473557);
+  background: linear-gradient(to bottom, #170f1f, #473557);
 }
 
 /*section contact style*/
 /*flexbox and section style*/
 .section-contact {
-    background: #948ac0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: whitesmoke;
+  background: #948ac0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
 }
 
 .section-contact h1 {
-    text-align: center;
-    padding: 5%;
-
+  text-align: center;
+  margin-top: 15%;
 }
 
-.section-contact h2 {
-    text-align: center;
-    padding: 5%;
+.section-contact h3 {
+  text-align: center;
 }
 
 .social-media {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
 }
 
 .link2 i {
-    border: 1px solid white;
-    border-radius: 100%;
-    -moz-border-radius: 100%;
-    padding: 25px;
-    color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  padding: 25px;
+  color: white;
 }
 
 .section-contact ul a {
-    text-decoration: none;
-    color: #948ac0;
-    font-size: 35px;
+  text-decoration: none;
+  color: #948ac0;
+  font-size: 35px;
 }
 
 .section-contact ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .link2 i:hover {
-    background: whitesmoke;
-    color: #948ac0;
+  background: whitesmoke;
+  color: #948ac0;
 }
 
 .copycin {
-    background: #EAC5DA;
-    text-align: center;
-    padding: 5%;
-    color: #948ac0;
-    font-size: 20px;
+  background: #eac5da;
+  text-align: center;
+  padding: 5%;
+  color: #948ac0;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 800px) {
+  /*This is the way to the elements put on columns for this view*/
+  .link-nav {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    /*This is the way to the elements put on columns for this view*/
-    .link-nav {
-        display: flex;
-        justify-content: space-between;
-    }
+  .social-media {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    height: 10px;
+    justify-content: space-evenly;
+  }
 
-    .social-media {
-        display: flex;
-        padding: 0;
-        flex-wrap: wrap;
-        height: 10px;
+  .social-media li {
+    width: 40%;
+    text-align: center;
+    margin: 15px 0;
+  }
 
-    }
+  .section-work a {
+    width: 100%;
+  }
+  .section-work {
+    padding: 20px;
+  }
 }
